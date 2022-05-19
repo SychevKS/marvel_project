@@ -6,7 +6,7 @@ class MarvelService {
     getResouce = async (url) => {
         let res = await fetch(url);
 
-        if(!res.ok) {
+        if (!res.ok) {
             throw new Error(`Could not fetch ${url}, status ${res.status}`);
         }
 
